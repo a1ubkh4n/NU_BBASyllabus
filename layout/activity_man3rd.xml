@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_man3rd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.a1ubkh4n.nusyllabus.man3rd">
+
+    <include
+        android:id="@+id/man3rd"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/man3rd"
+        android:layout_marginBottom="@dimen/scrollmarginbottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/manthird"
+                style="@style/headingforyear"
+                android:text="@string/select_your_subject"/>
+
+            <View style="@style/styleforview" />
+
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/innov_newpro"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="operaMan"
+                    android:text="@string/OperationsManagement" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+                <Button
+                    android:id="@+id/suppl_chain2"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="busstatMan"
+                    android:text="@string/business_statistics" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+                <Button
+                    android:id="@+id/entern3"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="oranMan"
+                    android:text="@string/OrganizationalBehavior" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/man_acc4"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="taxbdMan"
+                    android:text="@string/taxation_in_bangladesh" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/fin_man4"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="insuMan"
+                    android:text="@string/insurance_and_risk_management" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/ligal_environ2"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="compaMan"
+                    android:text="@string/CompanyLaw" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/bank_insuran4"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="manaccMan"
+                    android:text="@string/management_accounting" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/marMang4"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="marMan4"
+                    android:text="@string/marketing_management" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewman3rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_forSub" />
+
+</RelativeLayout>

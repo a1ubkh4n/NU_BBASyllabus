@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_man1st"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.a1ubkh4n.nusyllabus.man1st">
+
+    <include
+        android:id="@+id/man1st"
+        layout="@layout/tool_bar" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewman1st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_forSub" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/man1st"
+        android:layout_marginBottom="@dimen/scrollmarginbottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/firstman"
+                style="@style/headingforyear"
+                android:text="@string/select_your_subject" />
+
+            <View style="@style/styleforview" />
+
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/prinofacc"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="introBus"
+                    android:text="@string/introduction_to_business" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/syllabus" />
+
+                <Button
+                    android:id="@+id/prinoffin"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="prinofaccforman"
+                    android:text="@string/principles_of_accounting" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/syllabus" />
+
+                <Button
+                    android:id="@+id/parinofman"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="prinofmanforman"
+                    android:text="@string/principles_of_management" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/prinofmar"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="prinofmarforman"
+                    android:text="@string/principles_of_marketing" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/hisBd"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="hisBD2"
+                    android:text="@string/HistoryoftheEmergenceofIndependentBangladesh" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/styleforeachbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/syllabus" />
+
+
+                <Button
+                    android:id="@+id/miceco"
+                    style="@style/button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="micecoforman"
+                    android:text="@string/micro_economics" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

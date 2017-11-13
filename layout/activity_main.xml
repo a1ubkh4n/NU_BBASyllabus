@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context="com.a1ubkh4n.nusyllabus.MainActivity">
+
+
+        <RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/scrollmarginbottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tt"
+                            android:text="@string/select_your_honors_nsubject"
+                            style="@style/headingforyear" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/custom_button2" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/styleforeachbutton">
+
+                            <ImageView
+                                android:contentDescription="@string/selectyear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/buttonimageforhonssub" />
+
+
+                            <Button
+                                android:id="@+id/finsub"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:onClick="ClickOnFin"
+                                android:text="@string/bba_on_finance"
+                                style="@style/button_style"
+                                 />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/styleforeachbutton">
+
+                            <ImageView
+                                android:contentDescription="@string/selectyear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/buttonimageforhonssub" />
+
+                            <Button
+                                android:id="@+id/mansub"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:onClick="ClickOnMan"
+                                android:text="@string/bba_on_managent"
+                                style="@style/button_style" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           style="@style/styleforeachbutton">
+
+                            <ImageView
+                                android:contentDescription="@string/selectyear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/buttonimageforhonssub" />
+
+                            <Button
+                                android:id="@+id/marsub"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:onClick="ClickOnMar"
+                                style="@style/button_style"
+                                android:text="@string/bba_on_markeking" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/styleforeachbutton">
+
+                            <ImageView
+                                android:contentDescription="@string/selectyear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/buttonimageforhonssub" />
+
+
+                            <Button
+                                android:id="@+id/accsub"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                style="@style/button_style"
+                                android:onClick="ClickOnAcc"
+                                android:text="@string/bba_on_accounting" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+            </FrameLayout>
+
+            <!-- view for AdMob Banner Ad -->
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_for_mainAcctivity" />
+
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="com.a1ubkh4n.nusyllabus.NavigationDrawerFragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+
+

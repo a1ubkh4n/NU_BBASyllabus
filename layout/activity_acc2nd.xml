@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_acc1st"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.a1ubkh4n.nusyllabus.acc2nd">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/acc2nd"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/acc2nd"
+        android:layout_marginBottom="45dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accsecond"
+                style="@style/headingforyear"
+                android:text="@string/select_your_subject"/>
+
+            <View
+                style="@style/styleforview" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               style="@style/styleforeachbutton" >
+
+                <ImageView
+                    android:contentDescription="@string/syllabus"
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/buscom1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="compuinforAcc"
+                    android:text="@string/computer_and_information_technology"
+                    style="@style/button_style"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               style="@style/styleforeachbutton" >
+
+                <ImageView
+                    android:contentDescription="@string/syllabus"
+                   style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/compu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="taxinBdAcc"
+                    android:text="@string/taxation_in_bangladesh"
+                    style="@style/button_style" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 style="@style/styleforeachbutton" >
+
+                <ImageView
+                    android:contentDescription="@string/syllabus"
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/taxinban1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/button_style"
+                    android:onClick="interACcAcc"
+                    android:text="@string/intermediate_accounting" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styleforeachbutton" >
+
+                <ImageView
+                    android:contentDescription="@string/syllabus"
+                   style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/busstat1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/button_style"
+                    android:onClick="bussMathAcc"
+                    android:text="@string/business_mathmatics" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 style="@style/styleforeachbutton" >
+
+                <ImageView
+                    android:contentDescription="@string/syllabus"
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/macroeco1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/button_style"
+                    android:onClick="busstatAcc"
+                    android:text="@string/business_statistics" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styleforeachbutton" >
+
+                <ImageView
+                    android:contentDescription="@string/syllabus"
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/interacc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/button_style"
+                    android:onClick="macroAcc"
+                    android:text="@string/macro_economics" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styleforeachbutton" >
+
+                <ImageView
+                    android:contentDescription="@string/syllabus"
+                    style="@style/buttonimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/button_style"
+                    android:onClick="bussCommuAcc"
+                    android:text="@string/business_communication_and_report_writing" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewacc2nd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_forSub" />
+
+</RelativeLayout>
