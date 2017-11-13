@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "828043522212",
+    "firebase_url": "https://nusyllabus-43937.firebaseio.com",
+    "project_id": "nusyllabus-43937",
+    "storage_bucket": "nusyllabus-43937.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828043522212:android:7de9b546cfb981a4",
+        "android_client_info": {
+          "package_name": "com.a1ubkh4n.nusyllabus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828043522212-gc9id3cbd9n9rb9nch37svbdlcspa22e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a1ubkh4n.nusyllabus",
+            "certificate_hash": "9DCACBCE63547530D11CA0ADFCBEB0FC3D8D6AD7"
+          }
+        },
+        {
+          "client_id": "828043522212-12s5nltj78as0n6fvfaaq0hjfgvpd7sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL6jPMyl5SDDgw0AzRYy8SeOozsJpZxH8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828043522212-12s5nltj78as0n6fvfaaq0hjfgvpd7sv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
